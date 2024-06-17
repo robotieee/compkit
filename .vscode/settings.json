@@ -1,0 +1,13 @@
+{
+  "files.associations": {
+    "array": "cpp",
+    "string_view": "cpp",
+    "initializer_list": "cpp",
+    "utility": "cpp"
+  },
+  "conventionalCommits.scopes": [
+    "competitive_collection",
+    "readme",
+    "test"
+  ]
+}
