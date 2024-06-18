@@ -1,6 +1,6 @@
 # How to contribute to this project?
 
-<!-- [DataTome Docs](https://alexandrehiroyuki.github.io/DataTomeDocs/) -->
+[ROBOTIEEE Competitive Collection Docs](https://robotieee.github.io/competitive_collection_docs/)
 
 ## Reporting issues
 

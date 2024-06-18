@@ -1,4 +1,4 @@
-# Data Tome
+# ROBOTIEEE / Competitive Collection
 
 [![Latest Release](https://img.shields.io/github/v/release/robotieee/competitive_collection)](https://github.com/robotieee/competitive_collection)
 <!-- [![PlatformIO Registry](https://badges.registry.platformio.org/packages/alexandrehiroyuki/library/DataTome.svg)](https://registry.platformio.org/libraries/robotieee/competitive_collection) -->
@@ -15,22 +15,19 @@
 
 ## Description
 
-
+Collection of libraries for competitive robotics developed by and for ROBOTIEEE teams.
 
 ## Getting Started
 
 <!-- - This library is listed in the official [Arduino Library Manager](https://www.arduino.cc/reference/en/libraries/datatome/).
-- _**—Recommended Platform—**_ Use the [PlatformIO Registry](https://registry.platformio.org/libraries/robotieee/competitive_collection) to install the library!
+- _**—Recommended Platform—**_ Use the [PlatformIO Registry](https://registry.platformio.org/libraries/robotieee/competitive_collection) to install the library! -->
 - You can see the source code at the [GitHub Repository](https://github.com/robotieee/competitive_collection).
-- To avoid duplicating data for smaller samples of the same data, _[check the Partials feature](https://alexandrehiroyuki.github.io/DataTomeDocs/docs/category/partials)_! -->
 
 ## Documentation
 
-<!-- This library calculates statistical functions using a time-series sample implemented with a circular array that improves the performance.
+Online Docs: _[Click here to see the full documentation](https://robotieee.github.io/competitive_collection_docs/)_
 
-> Online Docs: _[Click here to see the full documentation](https://alexandrehiroyuki.github.io/DataTomeDocs/)_
->
-> Docs GitHub Repository: _[The documentation is coded with docusaurus, and you can visit the repository](https://github.com/robotieee/competitive_collection_docs)_ -->
+Docs GitHub Repository: _[The documentation is coded with docusaurus, and you can visit the repository](https://github.com/robotieee/competitive_collection_docs)_
 
 ## Contributing
 

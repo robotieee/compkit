@@ -1,9 +1,13 @@
 {
   "files.associations": {
+    "*.postcss": "tailwindcss",
+    "*.svelte": "svelte",
+    "*.html": "html",
     "array": "cpp",
     "string_view": "cpp",
     "initializer_list": "cpp",
-    "utility": "cpp"
+    "utility": "cpp",
+    "new": "cpp"
   },
   "conventionalCommits.scopes": [
     "competitive_collection",

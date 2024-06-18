@@ -2,7 +2,7 @@
     "$schema": "https://raw.githubusercontent.com/platformio/platformio-core/develop/platformio/assets/schema/library.json",
     "name": "competitive_collection",
     "version": "0.1.0",
-    "description": "Data Tome is a C++ library for data analysis and data filtering on IoT devices. Focus on the developer's experience and performance.",
+    "description": "A collection of libraries for competitive robotics developed by and for ROBOTIEEE teams.",
     "keywords": "sensors, input, data, processing, analysis, arduino, library, filter, smooth, competitive",
     "repository": {
         "type": "git",
@@ -26,9 +26,9 @@
     "frameworks": "arduino",
     "platforms": "*",
     "headers": [
-        "DataTome.h",
-        "DataTomeMvAvg.h",
-        "DataTomeAnalysis.h"
+        "competitive_collection.h",
+        "engine.h",
+        "engine_controller.h"
     ],
     "examples": [],
     "export": {
