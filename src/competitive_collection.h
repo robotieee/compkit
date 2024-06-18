@@ -7,6 +7,6 @@
 #define COMPETITIVE_COLLECTION_H
 
 #include <engine.h>
-// #include <DataTomeMvAvg.h>
+#include <engine_controller.h>
 
 #endif  // DATA_TOME_H
