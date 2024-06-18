@@ -15,7 +15,7 @@
 
 ## Description
 
-Collection of libraries for competitive robotics developed by and for ROBOTIEEE teams.
+A collection of libraries for competitive robotics developed by and for ROBOTIEEE teams.
 
 ## Getting Started
 
