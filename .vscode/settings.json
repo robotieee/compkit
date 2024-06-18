@@ -11,6 +11,8 @@
   },
   "conventionalCommits.scopes": [
     "competitive_collection",
+    "engine",
+    "engine_controller",
     "readme"
   ]
 }
