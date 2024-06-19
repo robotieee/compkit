@@ -10,7 +10,7 @@
     "new": "cpp"
   },
   "conventionalCommits.scopes": [
-    "competitive_collection",
+    "compkit",
     "engine",
     "engine_controller",
     "readme"

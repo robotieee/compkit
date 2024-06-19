@@ -6,19 +6,27 @@
 # Class (KEYWORD1)
 #######################################
 
-Engine	KEYWORD1
-EngineController	KEYWORD1
+engine	KEYWORD1
+engine_controller	KEYWORD1
+color_sensor	KEYWORD1
 
 #######################################
 # Methods and Functions (KEYWORD2)
-# Engine
+# engine
 #######################################
 
 speed	KEYWORD2
 
 #######################################
 # Methods and Functions (KEYWORD2)
-# EngineController
+# engine_controller
 #######################################
 
 walk	KEYWORD2
+
+#######################################
+# Methods and Functions (KEYWORD2)
+# color_sensor
+#######################################
+
+read	KEYWORD2

@@ -1,6 +1,6 @@
 # How to contribute to this project?
 
-[ROBOTIEEE Competitive Collection Docs](https://robotieee.github.io/competitive_collection_docs/)
+[ROBOTIEEE Competitive Kit Docs](https://robotieee.github.io/compkit_docs/)
 
 ## Reporting issues
 
@@ -10,7 +10,7 @@ Open an issue on the repository and provide the following information:
 2. What board and/or framework are you using?
 3. How can the issue be reproduced? Provide a minimal code snippet that reproduces the issue if possible.
 
-## Testing
+<!-- ## Testing
 
 The library comes with a set of automated tests. Contributions should include tests to cover the new functionality and ensure that no regressions are introduced.
 
@@ -30,7 +30,7 @@ If you wish to test the library on a specific board, configure the environment i
 
 ```bash
 $ pio test -e <environment>
-```
+``` -->
 
 ## Publish Package on PlatformIO Registry
 

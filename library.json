@@ -1,12 +1,12 @@
 {
     "$schema": "https://raw.githubusercontent.com/platformio/platformio-core/develop/platformio/assets/schema/library.json",
-    "name": "competitive_collection",
+    "name": "compkit",
     "version": "0.1.0",
     "description": "A collection of libraries for competitive robotics developed by and for ROBOTIEEE teams.",
     "keywords": "sensors, input, data, processing, analysis, arduino, library, filter, smooth, competitive",
     "repository": {
         "type": "git",
-        "url": "https://github.com/robotieee/competitive_collection"
+        "url": "https://github.com/robotieee/compkit"
     },
     "authors": [
         {
@@ -22,13 +22,14 @@
         }
     ],
     "license": "MIT",
-    "homepage": "https://github.com/robotieee/competitive_collection",
+    "homepage": "https://github.com/robotieee/compkit",
     "frameworks": "arduino",
     "platforms": "*",
     "headers": [
-        "competitive_collection.h",
+        "compkit.h",
         "engine.h",
-        "engine_controller.h"
+        "engine_controller.h",
+        "color_sensor.h"
     ],
     "examples": [],
     "export": {
