@@ -11,8 +11,9 @@
   },
   "conventionalCommits.scopes": [
     "compkit",
+    "readme",
     "engine",
     "engine_controller",
-    "readme"
+    "color_sensor",
   ]
 }

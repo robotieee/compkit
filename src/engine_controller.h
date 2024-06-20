@@ -7,7 +7,7 @@
 #define ENGINE_CONTROLLER_H
 
 #include <Arduino.h>
-#include <Engine.h>
+#include <engine.h>
 
 namespace compkit {
 class engine_controller {
@@ -17,8 +17,10 @@ class engine_controller {
 
  public:
   /** Constructor **/
-  engine_controller(uint16_t left_forward_pin, uint16_t left_backward_pin,
-                    uint16_t right_forward_pin, uint16_t right_backward_pin)
+  engine_controller(unsigned int left_forward_pin,
+                    unsigned int left_backward_pin,
+                    unsigned int right_forward_pin,
+                    unsigned int right_backward_pin)
       : _left_engine(new engine(left_forward_pin, left_backward_pin)),
         _right_engine(new engine(right_forward_pin, right_backward_pin)) {}
 
@@ -27,7 +29,7 @@ class engine_controller {
     delete _right_engine;
   }
 
-  void walk(int16_t left_speed, int16_t right_speed) {
+  void walk(int left_speed, int right_speed) {
     _left_engine->speed(left_speed);
     _right_engine->speed(right_speed);
   }

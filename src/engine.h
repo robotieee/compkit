@@ -10,12 +10,12 @@
 namespace compkit {
 class engine {
  private:
-  uint16_t _engine_forward_pin;
-  uint16_t _engine_backward_pin;
+  unsigned int _engine_forward_pin;
+  unsigned int _engine_backward_pin;
 
  public:
   /** Constructor **/
-  engine(uint16_t engine_forward_pin, uint16_t engine_backward_pin)
+  engine(unsigned int engine_forward_pin, unsigned int engine_backward_pin)
       : _engine_forward_pin(engine_forward_pin),
         _engine_backward_pin(engine_backward_pin) {}
 

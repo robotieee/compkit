@@ -35,4 +35,4 @@ Docs GitHub Repository: _[The documentation is coded with docusaurus, and you ca
 
 ## Developed by
 
-**Alexandre Hiroyuki** – [GitHub](https://github.com/AlexandreHiroyuki) – [LinkedIn](https://www.linkedin.com/in/alexandre-hiroyuki-yamauchi-7137241a6/)
+**Alexandre Hiroyuki** – [GitHub](https://github.com/AlexandreHiroyuki) – [LinkedIn](https://www.linkedin.com/in/alexandre-hiroyuki-yamauchi/)
