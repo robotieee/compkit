@@ -23,6 +23,11 @@ A collection of libraries for competitive robotics developed by and for ROBOTIEE
 - _**—Recommended Platform—**_ Use the [PlatformIO Registry](https://registry.platformio.org/libraries/robotieee/compkit) to install the library! -->
 - You can see the source code at the [GitHub Repository](https://github.com/robotieee/compkit).
 
+### Recommended to Use Together
+
+- [Ultrasonic by Erick Simões](https://github.com/ErickSimoes/Ultrasonic) - Library for the ultrasonic sensor.
+- [DataTome by Alexandre Hiroyuki Yamauchi](https://github.com/AlexandreHiroyuki/DataTome) - Library for data filtering and processing.
+
 ## Documentation
 
 Online Docs: _[Click here to see the full documentation](https://robotieee.github.io/compkit_docs/)_
