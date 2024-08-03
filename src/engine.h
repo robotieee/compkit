@@ -3,8 +3,8 @@
   Created by Alexandre Hiroyuki Yamauchi, June 17, 2024.
 ***************************************************************/
 
-#ifndef ENGINE_H
-#define ENGINE_H
+#ifndef COMPKIT_ENGINE_H
+#define COMPKIT_ENGINE_H
 
 #include <Arduino.h>
 namespace compkit {
@@ -31,4 +31,4 @@ class engine {
 };
 }  // namespace compkit
 
-#endif  // ENGINE_H
+#endif  // COMPKIT_ENGINE_H

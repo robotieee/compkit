@@ -3,8 +3,8 @@
   Created by Alexandre Hiroyuki Yamauchi, June 17, 2024.
 ***************************************************************/
 
-#ifndef ENGINE_CONTROLLER_H
-#define ENGINE_CONTROLLER_H
+#ifndef COMPKIT_ENGINE_CONTROLLER_H
+#define COMPKIT_ENGINE_CONTROLLER_H
 
 #include <Arduino.h>
 #include <engine.h>
@@ -36,4 +36,4 @@ class engine_controller {
 };
 }  // namespace compkit
 
-#endif  // ENGINE_CONTROLLER_H
+#endif  // COMPKIT_ENGINE_CONTROLLER_H

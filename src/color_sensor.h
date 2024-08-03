@@ -3,12 +3,11 @@
   Created by Alexandre Hiroyuki Yamauchi, June 17, 2024.
 ***************************************************************/
 
-#ifndef COLOR_SENSOR_H
-#define COLOR_SENSOR_H
+#ifndef COMPKIT_COLOR_SENSOR_H
+#define COMPKIT_COLOR_SENSOR_H
 
 #include <Arduino.h>
-
-#include <cmath>
+#include <compkit_macros.h>
 
 namespace compkit {
 
@@ -71,7 +70,7 @@ class color_sensor {
     for (size_t i = 0; i < _current_color_points; i++) {
       int diff = 0;
       for (size_t j = 0; j < 3; j++) {
-        diff += abs(colors[j] - _color_points[i][j]);
+        diff += compkit_abs(colors[j] - _color_points[i][j]);
       }
 
       if (diff < min_diff) {
@@ -85,4 +84,4 @@ class color_sensor {
 };
 }  // namespace compkit
 
-#endif  // COLOR_SENSOR_H
+#endif  // COMPKIT_COLOR_SENSOR_H

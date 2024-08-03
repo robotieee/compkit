@@ -7,6 +7,7 @@
 #define COMPKIT_H
 
 #include <color_sensor.h>
+#include <compkit_macros.h>
 #include <engine.h>
 #include <engine_controller.h>
 
