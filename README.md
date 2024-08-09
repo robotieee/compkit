@@ -15,7 +15,7 @@
 
 ## Description
 
-A collection of libraries for competitive robotics developed by and for ROBOTIEEE teams.
+A collection of libraries for competitive robotics developed by and for ROBOTIEEE teams using the Arduino framework with AVR boards.
 
 ## Getting Started
 

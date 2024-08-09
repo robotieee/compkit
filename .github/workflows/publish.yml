@@ -1,0 +1,22 @@
+name: PlatformIO Publish Release
+on:
+  release:
+    types: [released]
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    env:
+      PLATFORMIO_AUTH_TOKEN: ${{ secrets.PLATFORMIO_AUTH_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.9'
+      - name: Install PlatformIO Core
+        run: |
+          python -m pip install --upgrade pip
+          pip install platformio
+      - name: Publish Release
+        run: |
+          pio package publish --no-interactive --type library
