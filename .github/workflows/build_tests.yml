@@ -25,4 +25,4 @@ jobs:
           python -m pip install --upgrade pip
           pip install platformio
       - name: Run Build Test for Arduino Uno
-        run: platformio run -e arduino_uno
+        run: platformio run -e arduino_uno -t build_test.cpp
