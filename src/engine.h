@@ -19,7 +19,7 @@ class engine {
       : _engine_forward_pin(engine_forward_pin),
         _engine_backward_pin(engine_backward_pin) {}
 
-  void speed(int16_t speed) {
+  void speed(int speed) {
     if (speed > 0) {
       analogWrite(_engine_forward_pin, speed);
       analogWrite(_engine_backward_pin, 0);
