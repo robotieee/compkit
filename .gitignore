@@ -14,7 +14,6 @@ build/
 .idea/
 CMakeSettings.json
 
+# PlatformIO
 .pio/
-
-# Prototype Code
-main.cpp
+compile_commands.json

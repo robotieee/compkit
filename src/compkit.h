@@ -8,7 +8,7 @@
 
 #include <color_sensor.h>
 #include <compkit_macros.h>
-#include <engine.h>
-#include <engine_controller.h>
+#include <motor.h>
+#include <motor_controller.h>
 
-#endif  // COMPKIT_H
+#endif // COMPKIT_H

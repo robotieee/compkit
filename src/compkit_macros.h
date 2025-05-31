@@ -8,4 +8,4 @@
 
 #define compkit_abs(a) (((a) < 0) ? -(a) : (a))
 
-#endif  // COMPKIT_MACROS_H
+#endif // COMPKIT_MACROS_H

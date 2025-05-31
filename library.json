@@ -1,43 +1,55 @@
 {
-    "$schema": "https://raw.githubusercontent.com/platformio/platformio-core/develop/platformio/assets/schema/library.json",
-    "name": "compkit",
-    "version": "0.1.0",
-    "description": "A collection of libraries for competitive robotics developed by and for ROBOTIEEE teams.",
-    "keywords": "sensors, input, data, processing, analysis, arduino, library, filter, smooth, competitive",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/robotieee/compkit"
+  "$schema": "https://raw.githubusercontent.com/platformio/platformio-core/develop/platformio/assets/schema/library.json",
+  "name": "compkit",
+  "version": "0.1.0",
+  "description": "A collection of libraries for competitive robotics developed by and for ROBOTIEEE teams.",
+  "keywords": "sensors, input, data, processing, analysis, arduino, library, filter, smooth, competitive",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/robotieee/compkit"
+  },
+  "authors": [
+    {
+      "name": "ROBOTIEEE",
+      "url": "https://github.com/robotieee",
+      "maintainer": true
     },
-    "authors": [
-        {
-            "name": "ROBOTIEEE",
-            "url": "https://github.com/robotieee",
-            "maintainer": true
-        },
-        {
-            "name": "Alexandre Hiroyuki",
-            "email": "alex.hiroyuki@outlook.com",
-            "url": "https://github.com/AlexandreHiroyuki",
-            "maintainer": true
-        }
-    ],
-    "license": "MIT",
-    "homepage": "https://github.com/robotieee/compkit",
-    "frameworks": "arduino",
-    "platforms": "*",
-    "headers": [
-        "compkit.h",
-        "engine.h",
-        "engine_controller.h",
-        "color_sensor.h"
-    ],
-    "examples": [],
-    "export": {
-        "exclude": [
-            ".github",
-            ".gitignore",
-            ".vscode"
-        ]
-    },
-    "srcDir": "src"
+    {
+      "name": "Alexandre Hiroyuki",
+      "email": "alex.hiroyuki@outlook.com",
+      "url": "https://github.com/AlexandreHiroyuki",
+      "maintainer": true
+    }
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/robotieee/compkit",
+  "frameworks": "*",
+  "platforms": "*",
+  "headers": [
+    "compkit.h",
+    "motor.h",
+    "motor_controller.h",
+    "color_sensor.h"
+  ],
+  "examples": [
+    {
+      "name": "Color Sensor with Serial Example",
+      "base": "examples/color_sensor_with_serial",
+      "files": [
+        "color_sensor_with_serial.ino"
+      ]
+    }
+  ],
+  "export": {
+    "exclude": [
+      "test/",
+      ".github",
+      ".gitignore",
+      ".vscode",
+      "build_test.cpp",
+      "docs/icon.png",
+      "src/main.cpp"
+    ]
+  },
+  "srcDir": "src"
 }
