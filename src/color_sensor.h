@@ -13,7 +13,37 @@ namespace compkit {
 
 // color_point is a 4-element array of integers
 // {red, green, blue, natural}
-typedef int color_point[4];
+struct color_point {
+  union {
+    struct {
+      int red;
+      int green;
+      int blue;
+      int natural;
+    };
+    int data[4]; // Array-style access
+  };
+
+  // Optional: constructor
+  color_point(int r = 0, int g = 0, int b = 0, int n = 0)
+      : red(r), green(g), blue(b), natural(n) {}
+
+  // Overload operator[] for non-const objects
+  int &operator[](size_t index) {
+    if(index >= 4) {
+      throw std::out_of_range("Index out of range");
+    }
+    return data[index];
+  }
+
+  // Overload operator[] for const objects
+  const int &operator[](size_t index) const {
+    if(index >= 4) {
+      throw std::out_of_range("Index out of range");
+    }
+    return data[index];
+  }
+};
 
 template <size_t n_color_points = 1> class color_sensor {
 private:

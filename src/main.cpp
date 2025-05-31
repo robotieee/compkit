@@ -13,6 +13,21 @@ void setup() {
 void loop() {
   compkit::color_point point;
   color_reader.read(point);
+  Serial.println(point[0]);
+  Serial.println(point[1]);
+  Serial.println(point[2]);
   Serial.println(point[3]);
+
+  Serial.println("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=");
+
+  Serial.println(point.red);
+  Serial.println(point.green);
+  Serial.println(point.blue);
+  Serial.println(point.natural);
+
+  Serial.println("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=");
+
+  Serial.println(color_reader.closest_color(point));
+
   delay(1000);
 }
