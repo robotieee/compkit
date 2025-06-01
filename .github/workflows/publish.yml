@@ -15,6 +15,9 @@ jobs:
     name: Publish a new Release to PlatformIO
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          fetch-tags: true
       - uses: actions/setup-python@v5
         with:
           python-version: "3.9"
@@ -28,7 +31,12 @@ jobs:
           sudo apt install -y jq
       - name: Update Library Metadata and Configurations
         run: |
-          LATEST_TAG=$(git describe --tags --abbrev=0)
+          if git tag | grep . >/dev/null; then
+            LATEST_TAG=$(git describe --tags --abbrev=0)
+          else
+            echo "❌ No tags found in the repository."
+            exit 1
+          fi
           LIB_V=$(jq -r .version library.json)
           PROPS_V=$(cat library.properties | grep -oP version=\K.*)
           if [ "$LIB_V" = "$LATEST_TAG" ] && [ "$PROPS_V" = "$LATEST_TAG" ]; then
