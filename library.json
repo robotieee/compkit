@@ -46,9 +46,9 @@
       ".github",
       ".gitignore",
       ".vscode",
-      "build_test.cpp",
       "docs/icon.png",
-      "src/main.cpp"
+      ".clang-format",
+      ".clang-tidy"
     ]
   },
   "srcDir": "src"
