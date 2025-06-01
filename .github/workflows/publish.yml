@@ -15,9 +15,6 @@ jobs:
     name: Publish a new Release to PlatformIO
     steps:
       - uses: actions/checkout@v4
-        with:
-          fetch-depth: 1
-          fetch-tags: true
       - uses: actions/setup-python@v5
         with:
           python-version: "3.9"
