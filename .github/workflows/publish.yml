@@ -53,7 +53,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
+          fetch-depth: 0
           fetch-tags: true
+          ref: main
       - name: Update library versions
         run: |
           LATEST_TAG=$(git describe --tags --abbrev=0)
