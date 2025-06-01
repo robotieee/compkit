@@ -1,9 +1,9 @@
 name: Publish to PlatformIO
 
 on:
-  release:
-    types: [released]
-  workflow_call:
+  push:
+    tags:
+      - '*'
 
 permissions:
   contents: write
@@ -33,11 +33,6 @@ jobs:
         run: git fetch --tags
       - name: Update Library Metadata and Configurations
         run: |
-          TAGS=$(git tag)
-          if [ -z "$TAGS" ]; then
-            echo "❌ No tags found in the repository."
-            exit 1
-          fi
           LATEST_TAG=$(git describe --tags --abbrev=0)
           LIB_V=$(jq -r .version library.json)
           PROPS_V=$(cat library.properties | grep -oP version=\K.*)
@@ -48,7 +43,7 @@ jobs:
           set -e
           sed -i -E "s/(version=).*/\1${LATEST_TAG}/" library.properties 
           echo ✅ Successfully Modified release tag in library.json file...
-          jq ".version = \"${LATEST_TAG}\"" library.json > temp.json && mv temp.json library.json            
+          jq ".version = \"${LATEST_TAG}\"" library.json > temp.json && mv temp.json library.json
           echo ✅ Successfully Modified release tag in library.properties file...
       - name: Publish to PlatformIO
         env:
