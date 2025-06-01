@@ -29,20 +29,10 @@ struct color_point {
       : red(r), green(g), blue(b), natural(n) {}
 
   // Overload operator[] for non-const objects
-  int &operator[](size_t index) {
-    if(index >= 4) {
-      throw std::out_of_range("Index out of range");
-    }
-    return data[index];
-  }
+  int &operator[](size_t index) { return data[index]; }
 
   // Overload operator[] for const objects
-  const int &operator[](size_t index) const {
-    if(index >= 4) {
-      throw std::out_of_range("Index out of range");
-    }
-    return data[index];
-  }
+  const int &operator[](size_t index) const { return data[index]; }
 };
 
 template <size_t n_color_points = 1> class color_sensor {
