@@ -38,6 +38,13 @@
       "files": [
         "color_sensor_with_serial.ino"
       ]
+    },
+    {
+      "name": "Basic Color Sensor Example",
+      "base": "examples/basic_color_sensor",
+      "files": [
+        "basic_color_sensor.ino"
+      ]
     }
   ],
   "export": {
