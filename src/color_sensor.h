@@ -35,6 +35,18 @@ struct color_point {
   const int &operator[](size_t index) const { return data[index]; }
 };
 
+void print_color(color_point &point) {
+  Serial.print("(");
+  Serial.print(point[0]);
+  Serial.print(", ");
+  Serial.print(point[1]);
+  Serial.print(", ");
+  Serial.print(point[2]);
+  Serial.print(", ");
+  Serial.print(point[3]);
+  Serial.print(")");
+}
+
 template <size_t n_color_points = 1> class color_sensor {
 private:
   unsigned int _led_pin[3]; // {red, green, blue}
@@ -88,8 +100,8 @@ public:
     point[3] = _color_points[index][3];
   }
 
-  int color_difference(color_point &point1, color_point &point2) {
-    int diff = 0;
+  int32_t color_difference(color_point &point1, color_point &point2) {
+    int32_t diff = 0;
     for(size_t i = 0; i < 3; i++) {
       diff += compkit_abs(point1[i] - point2[i]);
     }
@@ -97,10 +109,10 @@ public:
   }
 
   int closest_color(color_point &point) {
-    int min_diff      = 99999;
+    int32_t min_diff  = 99999;
     int closest_color = 0;
     for(size_t i = 0; i < _current_color_points; i++) {
-      int diff = 0;
+      int32_t diff = 0;
       for(size_t j = 0; j < 3; j++) {
         diff += compkit_abs(point[j] - _color_points[i][j]);
       }
