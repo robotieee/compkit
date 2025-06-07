@@ -25,19 +25,18 @@ jobs:
         run: |
           sudo apt update 
           sudo apt install -y jq
-      - name: Update Library Metadata and Configurations
+      - name: Check if release is new
+        id: need_publish
         run: |
           LATEST_TAG=$(git describe --tags --abbrev=0)
           LIB_V=$(jq -r .version library.json)
-          PROPS_V=$(cat library.properties | grep -oP version=\K.*)
-          if [ $LIB_V = $LATEST_TAG ] || [ $PROPS_V = $LATEST_TAG ]; then
-            exit 1
+          PROPS_V=$(grep -oP 'version=\K.*' library.properties)
+          echo "::set-output name=latest::$LATEST_TAG"
+          if [ "$LIB_V" = "$LATEST_TAG" ] && [ "$PROPS_V" = "$LATEST_TAG" ]; then
+            echo "already_up_to_date=true" >> $GITHUB_OUTPUT
+          else
+            echo "already_up_to_date=false" >> $GITHUB_OUTPUT
           fi
-          set -e
-          sed -i -E "s/(version=).*/\1${LATEST_TAG}/" library.properties 
-          echo ✅ Successfully Modified release tag in library.json file...
-          jq ".version = \"${LATEST_TAG}\"" library.json > temp.json && mv temp.json library.json            
-          echo ✅ Successfully Modified release tag in library.properties file...
       - name: Publish to PlatformIO
         env:
           PLATFORMIO_AUTH_TOKEN: ${{ secrets.PLATFORMIO_AUTH_TOKEN }}
