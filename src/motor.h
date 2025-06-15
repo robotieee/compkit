@@ -7,7 +7,6 @@
 #define COMPKIT_MOTOR_H
 
 #include <Arduino.h>
-namespace compkit {
 class motor {
 private:
   unsigned int _motor_forward_pin;
@@ -29,6 +28,5 @@ public:
     }
   }
 };
-} // namespace compkit
 
 #endif // COMPKIT_MOTOR_H

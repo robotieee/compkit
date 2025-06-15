@@ -9,8 +9,6 @@
 #include <Arduino.h>
 #include <compkit_macros.h>
 
-namespace compkit {
-
 // color_point is a 4-element array of integers
 // {red, green, blue, natural}
 struct color_point {
@@ -126,6 +124,5 @@ public:
     return closest_color;
   }
 };
-} // namespace compkit
 
 #endif // COMPKIT_COLOR_SENSOR_H

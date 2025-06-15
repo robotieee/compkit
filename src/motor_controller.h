@@ -9,7 +9,6 @@
 #include <Arduino.h>
 #include <motor.h>
 
-namespace compkit {
 class motor_controller {
 private:
   motor *_left_motor;
@@ -34,6 +33,5 @@ public:
     _right_motor->speed(right_speed);
   }
 };
-} // namespace compkit
 
 #endif // COMPKIT_MOTOR_CONTROLLER_H

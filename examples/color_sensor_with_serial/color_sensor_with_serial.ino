@@ -1,7 +1,7 @@
 #include <Arduino.h>
 #include <compkit.h>
 
-compkit::color_sensor<5> color_reader(13, 12, 14, 27);
+color_sensor<5> color_reader(13, 12, 14, 27);
 
 void menu(String incomingString) {
   Serial.print("Received: ");
@@ -19,7 +19,7 @@ void menu(String incomingString) {
     Serial.println("Function 'test' ended!");
   } else if(incomingString == "c" || incomingString == "addc") {
     Serial.println("Function 'add color point' recognized!");
-    compkit::color_point point;
+    color_point point;
     color_reader.read(point);
 
     Serial.print("Red: ");
@@ -64,7 +64,7 @@ void setup() {
 }
 
 void loop() {
-  compkit::color_point point;
+  color_point point;
   color_reader.read(point);
   Serial.print("Red: ");
   Serial.print(point[0]);
