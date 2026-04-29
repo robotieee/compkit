@@ -1,8 +1,8 @@
 #include <compkit.h>
 
 color_sensor<2> sensorDireita(A0, 2, 3, 4);
-size_t verde;
-size_t amarelo;
+int verde;
+int amarelo;
 
 void setup() {
   Serial.begin(9600);
