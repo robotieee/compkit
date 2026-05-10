@@ -1,14 +1,23 @@
 # ROBOTIEEE Compkit
 
-## Getting Started
+## Como instalar no Arduino IDE para usuários
 
-1. Clone the repository
+> Se você estiver usando o Arduino IDE, você pode instalar o Compkit facilmente através do Gerenciador de Bibliotecas. [Compkit na página oficial do Arduino](https://docs.arduino.cc/libraries/compkit/)
+
+1. Abra o Arduino IDE
+2. Abra o Gerenciador de Bibliotecas
+3. Procure por "Compkit"
+4. Clique em "Instalar"
+
+## Primeiros passos para desenvolvedores
+
+1. Clone o repositório
 
 ```bash
-git clone https://github.com/platformio/esp32.pio.template.git
+git clone https://github.com/robotieee/compkit.git
 ```
 
-2. Install PlatformIO Core (CLI)
+2. Instale o PlatformIO Core (CLI)
 
 [PlatformIO Core](https://docs.platformio.org/en/latest/core/installation/index.html)
 
@@ -16,17 +25,17 @@ git clone https://github.com/platformio/esp32.pio.template.git
 pip install platformio
 ```
 
-3. Install PlatformIO IDE (VSCode with PlatformIO Extension)
+3. Instale o PlatformIO IDE (VS Code com a extensão PlatformIO)
 
 [PlatformIO IDE](https://docs.platformio.org/en/latest/integration/ide/vscode.html)
 
-4. Install the recommended extensions
+4. Instale as extensões recomendadas
 
-Look at the `.vscode/extensions.json` file to see the recommended extensions.
+Consulte o arquivo `.vscode/extensions.json` para ver as extensões recomendadas.
 
-> When you open the project in VSCode, it will automatically show the extensions to install.
+> Ao abrir o projeto no VS Code, as extensões a instalar serão sugeridas automaticamente.
 
-5. Run the commands to install the dependencies and build the project
+5. Execute os comandos para instalar as dependências e compilar o projeto
 
 ```bash
 pio install
