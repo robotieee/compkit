@@ -34,7 +34,7 @@ struct color_point {
 };
 
 void print_color(color_point &point) {
-  Serial.print("(");
+  Serial.print("{");
   Serial.print(point[0]);
   Serial.print(", ");
   Serial.print(point[1]);
@@ -42,7 +42,12 @@ void print_color(color_point &point) {
   Serial.print(point[2]);
   Serial.print(", ");
   Serial.print(point[3]);
-  Serial.print(")");
+  Serial.print("};");
+}
+
+void println_color(color_point &point) {
+  print_color(point);
+  Serial.println("");
 }
 
 template <size_t n_color_points = 1> class color_sensor {

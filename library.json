@@ -1,7 +1,7 @@
 {
   "$schema": "https://raw.githubusercontent.com/platformio/platformio-core/develop/platformio/assets/schema/library.json",
   "name": "compkit",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "A collection of libraries for competitive robotics developed by and for ROBOTIEEE teams.",
   "keywords": "sensors, input, data, processing, analysis, arduino, library, filter, smooth, competitive",
   "repository": {
@@ -33,6 +33,20 @@
   ],
   "examples": [
     {
+      "name": "Calibration Print Example",
+      "base": "examples/calibration_print",
+      "files": [
+        "calibration_print.ino"
+      ]
+    },
+    {
+      "name": "Basic Read Color Sensor Example",
+      "base": "examples/basic_read",
+      "files": [
+        "basic_read.ino"
+      ]
+    },
+    {
       "name": "Color Sensor with Serial Example",
       "base": "examples/color_sensor_with_serial",
       "files": [
@@ -40,10 +54,10 @@
       ]
     },
     {
-      "name": "Basic Color Sensor Example",
-      "base": "examples/basic_color_sensor",
+      "name": "Automatic Calibration Color Sensor Example",
+      "base": "examples/auto_calibration_color_sensor",
       "files": [
-        "basic_color_sensor.ino"
+        "auto_calibration_color_sensor.ino"
       ]
     }
   ],
